@@ -114,6 +114,11 @@
                 <th>Subject</th>
                 <th>Mark</th>
             </tr>
+            <tr th:object="${grade}">
+                <td th:text="*{name}" ></td>
+                <td th:text="*{subject}" ></td>
+                <td th:text="*{score}" ></td>
+            </tr>
         </table>
     </div>
 
