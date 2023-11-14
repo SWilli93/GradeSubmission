@@ -30,6 +30,27 @@
     cursor: pointer;
 }
 
+.addNew {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0.5em;
+    padding-top: .6em;
+    padding-bottom: .6em;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #263238;
+    border-radius: 5px;
+    border: solid white 2px;
+}
+
+.addNew:hover {
+    background-color: #04AA6D;
+    cursor: pointer;
+}
+
 #table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;

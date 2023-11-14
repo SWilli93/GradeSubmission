@@ -6,8 +6,8 @@
 </head>
 <body>
     <div class="topnav">
-        <a>Form</a>
-        <a>Grades</a>
+        <a th:href="@{/}">Form</a>
+        <a th:href="@{/grades}">Grades</a>
     </div>
 
     <div class="container">
@@ -17,6 +17,7 @@
                 <th>Student</th>
                 <th>Subject</th>
                 <th>Letter Grade</th>
+                <th><a role="button" class="addNew" th:href="@{/}">Add New</a></th>
             </tr>
             <tr th:each="grade: ${grades}">
                 <td th:text="*{grade.name}" ></td>

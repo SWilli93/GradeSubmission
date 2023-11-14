@@ -23,7 +23,7 @@ public class GradeController {
     @PostMapping("/handleSubmit")
     public String submitGrade(Grade grade) {
         int index = getGradeIndex(grade.getId());
-        if (index == -1000) {
+        if (index == Constants.NOT_FOUND) {
             studentGrades.add(grade);
         } else {
             studentGrades.set(index, grade);
@@ -41,6 +41,6 @@ public class GradeController {
         for (int i = 0; i < studentGrades.size(); i++) {
             if (studentGrades.get(i).getId().equals(id)) return i;
         }
-        return -1000;
+        return Constants.NOT_FOUND;
     }
 }
